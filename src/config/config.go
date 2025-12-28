@@ -3,6 +3,7 @@ package config
 type Config struct {
 	Time     string     `json:"time"`
 	Startup  bool       `json:"startup"`
+	RunOnce  bool       `json:"run_once"` //立即运行并退出标识
 	Telegram Telegram   `json:"telegram"`
 	Accounts []Accounts `json:"accounts"`
 }
